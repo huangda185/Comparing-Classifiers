@@ -2,8 +2,9 @@
 ### Classification Modeling using Portuguese Banking Institution Dataset found in UCI ML Repository.
 ### Logistic Regression, KNN algorithm, Decision Tree, and SVM model
 
-## Business Objective is to identify the best classification model to help the Portuguese Banking Instition detemrine if a client/contact would subscribe to a bank term deposit.
-## Data used is showing that there are a total of 17 campaigns that occurred between May 2008 and November 2010 with an 8% success rate that subscribed to a bank term deposit.
+## Business Objective 
+### Identify the best classification model to help the Portuguese Banking Instition detemrine if a client/contact would subscribe to a bank term deposit.
+### Data used is showing that there are a total of 17 campaigns that occurred between May 2008 and November 2010 with an 8% success rate that subscribed to a bank term deposit.
 
 ## Process:
 #### Select the target feature which in this case in whether a person subscribed to a bank term deposit.
@@ -61,7 +62,7 @@
 ### The Logiistic Regression Model is close in both time and accuracy, which may show to be better as we do more hypertuning of the classifers.
 
 ## Recommendation:
-### By looking at the fields that have the strongest correlation and affects the target subscribe field, we should ducing on the terms of the bank terms itself such as rate, months, and durations.
+### By looking at the fields that have the strongest correlation and affects the target subscribe field, we should focuing on the terms of the bank terms itself such as rate, months, and durations and less on the status of the indiviual contacts.
 
 
 
