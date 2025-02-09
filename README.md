@@ -22,21 +22,21 @@
 
 | model      | train score      | test score      | time      |
 |---------------|---------------|---------------|---------------|
-| knn | 0.928589 | 0.928589 | 0.928589 |
-| logisticregression | 0.911836 | 0.911143 | 3.139655 |
-| svc | 0.921700 | 0.911143 | 0.911143 |
-| decisiontreeclassifier | 1.000000 | 0.885652 | 0.933519 |
+| knn | 0.928589 | 0.903010 | 4.267105 |
+| logisticregression | 0.911836 | 0.911143 | 3.611582 |
+| svc | 0.921700 | 0.911143 | 41.856269 |
+| decisiontreeclassifier | 1.000000 | 0.885652 | 0.906606 |
 
 ## Improving the Model by hypertuning the classifiers
 ### The accuracy score for the training and test scores are more closely aligh with little variance. 
-### The Decision Tree Model run time is the quickest of the models with high scores, followed by Logistic Regression.
+### The Logistic Regression Model run time is the quickest of the models along with with high scores with very little to no variance.
 ### Note that all 4 models beats the baseline score of .88
 | model      | train score      | test score      | time      |
 |---------------|---------------|---------------|---------------|
-| knn | 0.924219 | 0.904467 | 3.178268 |
-| logisticregression | 0.911836 | 0.911143 | 0.617877 |
-| svc | 0.921700 | 0.911143 | 0.911143 | 47.991672 |
-| decisiontreeclassifier | 0.917420 | 0.915028 | 0.420784 |
+| knn | 0.924219 | 0.904467 | 1.172090 |
+| logisticregression | 0.911836 | 0.911143 | 0.602873 |
+| svc | 0.921700 | 0.911143 | 52.075908 |
+| decisiontreeclassifier | 0.917420 | 0.915028 | 2.406309 |
 
 ## Further evaluating the co-efficient of each values and fields in our data set
 #### Here are the top 5 that have a strong relationship to the target field of whether they subscribe or not.
@@ -58,8 +58,8 @@
 | age | 0.003936 |
 
 ## Conclusion:
-### The Decicion Tree Model have been identified showed to be the most efficient in terms of time and accuracy.
-### The Logiistic Regression Model is close in both time and accuracy, which may show to be better as we do more hypertuning of the classifers.
+### The Logistic Regression Model is the best model to determine if a client/contact would subscribe to a bank term deposit or not.
+### By finetuning the classifer values, we were able to cut down the run time for the Logistic Regression model without losing any accuracy.
 
 ## Recommendation:
 ### By looking at the fields that have the strongest correlation and affects the target subscribe field, we should focuing on the terms of the bank terms itself such as rate, months, and durations and less on the status of the indiviual contacts.
